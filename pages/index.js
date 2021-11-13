@@ -1,6 +1,7 @@
-import Home from "./nextjs";
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
 
-export default Home = () => {
+const Home = () => (
   <div className={styles.container}>
     <Head>
       <title>Daryl</title>
@@ -18,4 +19,6 @@ export default Home = () => {
       </p>
     </main>
   </div>
-};
+);
+
+export default Home;
