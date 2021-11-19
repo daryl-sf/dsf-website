@@ -21,8 +21,8 @@ const Home = () => {
           This is the start of a hobby website for Daryl. The goal is to learn 👨🏼‍🎓
         </p>
         <p>
-          {status === "authenticated" && `Welcome ${session?.user?.name}`}
-          {status !== "authenticated" && <button onClick={() => signIn()}>Sign in</button>}
+          {status === "authenticated" && `Welcome ${session.user.name || session.user.email}`}
+          {status !== "authenticated" && status !== "loading" && <button onClick={() => signIn()}>Sign in</button>}
         </p>
       </main>
     </div>
