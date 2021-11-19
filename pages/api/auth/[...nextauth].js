@@ -4,7 +4,7 @@ import { PrismaAdapter } from "@next-auth/prisma-adapter"
 import { PrismaClient } from "@prisma/client"
 
 const prisma = new PrismaClient()
-
+// test
 export default NextAuth({
   adapter: PrismaAdapter(prisma),
   providers: [
