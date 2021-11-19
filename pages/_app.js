@@ -32,7 +32,7 @@ function Auth({ children }) {
   const isUser = !!session?.user
   React.useEffect(() => {
     if (status === "loading") return // Do nothing while loading
-    if (!isUser) signIn() // If not authenticated, force log in
+    if (!isUser) signIn(null, {redirect: false}) // If not authenticated, force log in
   }, [isUser, status])
 
   if (isUser) {
