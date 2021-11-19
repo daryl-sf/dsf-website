@@ -1,6 +1,6 @@
 import { useSession } from "next-auth/react"
 
-const votes = () => {
+const Votes = () => {
   const { data: session } = useSession()
 
   return (
@@ -11,6 +11,6 @@ const votes = () => {
   )
 }
 
-votes.auth = true;
+Votes.auth = true;
 
-export default votes;
+export default Votes;

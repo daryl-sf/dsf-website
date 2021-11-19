@@ -1,4 +1,5 @@
-import { SessionProvider, getSession } from 'next-auth/react';
+import React from 'react'
+import { SessionProvider, getSession, useSession } from 'next-auth/react';
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
