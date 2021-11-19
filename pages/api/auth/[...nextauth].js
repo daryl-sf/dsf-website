@@ -14,4 +14,5 @@ export default NextAuth({
     })
   ],
   database: process.env.DATABASE_URL,
+  secret: process.env.SECRET
 })
