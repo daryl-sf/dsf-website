@@ -1,5 +1,5 @@
 import React from 'react'
-import { SessionProvider, getSession, useSession } from 'next-auth/react';
+import { SessionProvider, getSession, useSession, signIn, signOut } from 'next-auth/react';
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
       ) : (
         <Component {...pageProps} />
       )}
-      {/* <Component {...pageProps} /> */}
+      <button onClick={() => signOut()}>Sign out</button>
     </SessionProvider>
   );
 }
