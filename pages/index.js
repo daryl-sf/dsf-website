@@ -21,11 +21,13 @@ const Home = () => {
         <p className={styles.description}>
           This is the start of a hobby website for Daryl. The goal is to learn 👨🏼‍🎓
         </p>
-        <p>
+
+        <p className={styles.description}>Under construction 🚧</p>
+        {/* <p>
           {status === "authenticated" && `Welcome ${session.user.name || session.user.email}`}
           {status !== "authenticated" && status !== "loading" && <button onClick={() => signIn()}>Sign in</button>}
-        </p>
-        <Link href="/votes">Votes</Link>
+        </p> */}
+        {/* <Link href="/votes">Votes</Link> */}
       </main>
     </div>
   );
